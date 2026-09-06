@@ -2,15 +2,15 @@ import os
 import sys
 from dataclasses import dataclass
 
-from catboost import CatBoostRegressor
-from sklearn.ensemble import(
+from catboost import CatBoostRegressor  # type: ignore
+from sklearn.ensemble import( # type: ignore
     AdaBoostRegressor,GradientBoostingRegressor,RandomForestRegressor
 )
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import r2_score
-from sklearn.neighbors import KNeighborsRegressor
-from sklearn.tree import DecisionTreeRegressor
-from xgboost import XGBRegressor
+from sklearn.linear_model import LinearRegression # type: ignore
+from sklearn.metrics import r2_score # type: ignore
+from sklearn.neighbors import KNeighborsRegressor # type: ignore
+from sklearn.tree import DecisionTreeRegressor # type: ignore
+from xgboost import XGBRegressor # type: ignore
 
 from src.exception import CustomException
 from src.logger import logging

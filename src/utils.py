@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd 
 import dill # type: ignore
 from src.exception import CustomException
-from sklearn.metrics import r2_score
-from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import r2_score # type: ignore
+from sklearn.model_selection import GridSearchCV # type: ignore
 
 def save_object(file_path , obj):
     try:

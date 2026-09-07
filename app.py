@@ -1,8 +1,8 @@
-from flask import Flask , request , render_template
+from flask import Flask , request , render_template # type: ignore
 import numpy as np 
 import pandas as pd 
 
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler # type: ignore
 from src.pipeline.predict_pipeline import PredictPipeline , CustomData
 
 application = Flask(__name__)

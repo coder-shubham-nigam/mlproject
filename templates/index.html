@@ -1,1 +1,70 @@
-<h1> welcome to home page </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Student Performance Indicator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .welcome-card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 50px 40px;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        .welcome-title {
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .welcome-text {
+            color: #666;
+            margin-bottom: 35px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .btn-custom {
+            background-color: #764ba2;
+            border: none;
+            color: white;
+            padding: 12px 35px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-custom:hover {
+            background-color: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-card">
+        <h1 class="welcome-title">Student Performance Indicator</h1>
+        <p class="welcome-text">
+            Welcome! This tool uses machine learning to predict a student's math score based on various demographic factors and academic background. Click below to enter your details and see the prediction.
+        </p>
+        
+        <!-- NOTE: Update the href attribute below to match your Flask route for the home page -->
+        <a href="/predictdata" class="btn btn-custom">Go to Prediction Tool</a>
+    </div>
+</body>
+</html>
